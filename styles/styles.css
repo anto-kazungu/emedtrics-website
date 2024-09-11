@@ -7,8 +7,11 @@
 /* Template using grid */
 
 body {
+    min-height: 100vh;
+    background-color: black;
     display: grid;
     grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "navbar navbar"
     "sidebar main"
@@ -19,11 +22,13 @@ body {
 /* Header and Navigation Bar */
 
 header{
+    top: 0;
+    position: sticky;
     grid-area: navbar;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 5%;
 }
 
 li, a, button{
@@ -56,3 +61,41 @@ li, a, button{
 }
 
 /* Sidebar */
+
+aside{
+    height: calc(100vh-124.06px);
+    top: 124.06px;
+    position: sticky;
+    align-self: start;
+    grid-area: sidebar;
+    background-color: rgb(249, 243, 243);
+    padding: 20px 1em;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.side ul {
+    list-style: none;
+}
+
+
+.side ul li.active a{
+    color: orange;
+}
+
+.side a{
+    border-radius: .5em;
+    padding: .85em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.side a:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.side img{
+    width: 20px;
+    flex-shrink: 0;
+}
