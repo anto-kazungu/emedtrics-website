@@ -277,3 +277,53 @@ aside{
 #cta-contact-btn:hover{
     background-color: green;
 }
+
+/* Footer */
+
+footer{
+    background-color: red;
+    height: max-content;
+    width: 100vw;
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-header{
+    font-size: 16px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.text-r{
+    padding-right: 80px;
+}
+
+.footer-info{
+    margin: 20px;
+}
+
+.footer-info>p, .copyright-section{
+    font-size: 16px;
+    padding: 15px;
+    color: white;
+}
+
+.copyright-section{
+    border-top: 2px solid white;
+}
+
+.copyright-section>p{
+    text-align: center;
+}
