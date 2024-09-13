@@ -358,7 +358,7 @@ footer{
         display: grid;
         grid-template-columns: 300px auto;
         grid-template-areas: 
-        "navbar navbar"
+        "navbar navbar""
         "sidebar main"
         "footer footer";
         
