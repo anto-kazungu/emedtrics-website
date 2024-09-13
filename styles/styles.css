@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Template using grid */
 
 body {
@@ -205,7 +209,7 @@ aside{
 
 .hero-img > img{
     margin: 20px;
-    width: 30%;
+    width: 40%;
 }
 
 .hero-text{
@@ -237,8 +241,12 @@ aside{
     color: rgb(255, 255, 255);
 }
 
-#text-left{
+.text-left{
     text-align: left;
+}
+
+.text-right{
+    text-align: right;
 }
 
 .about-content{
